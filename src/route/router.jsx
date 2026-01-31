@@ -360,6 +360,7 @@ export const router = createBrowserRouter([
         ]
     }
 ],
-{
-    basename: "/frontend",
-  });
+// {
+//     basename: "/frontend",
+//   }
+);
