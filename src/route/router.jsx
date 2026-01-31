@@ -79,115 +79,115 @@ export const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             {
-                path: "/home",
+                path: "home",
                 element: <Home />
             },
             {
-                path: "/dashboards/analytics",
+                path: "dashboards/analytics",
                 element: <Analytics />
             },
             {
-                path: "/reports/sales",
+                path: "reports/sales",
                 element: <ReportsSales />
             },
             {
-                path: "/reports/leads",
+                path: "reports/leads",
                 element: <ReportsLeads />
             },
             {
-                path: "/reports/project",
+                path: "reports/project",
                 element: <ReportsProject />
             },
             {
-                path: "/reports/timesheets",
+                path: "reports/timesheets",
                 element: <ReportsTimesheets />
             },
             {
-                path: "/proposal/list",
+                path: "proposal/list",
                 element: <Proposalist />
             },
             {
-                path: "/proposal/view",
+                path: "proposal/view",
                 element: <ProposalView />
             },
             {
-                path: "/proposal/edit",
+                path: "proposal/edit",
                 element: <ProposalEdit />
             },
             {
-                path: "/proposal/create",
+                path: "proposal/create",
                 element: <ProposalCreate />
             },
             {
-                path: "/payment/list",
+                path: "payment/list",
                 element: <PaymentList />
             },
             {
-                path: "/payment/view",
+                path: "payment/view",
                 element: <PaymentView />
             },
             {
-                path: "/payment/create",
+                path: "payment/create",
                 element: <PaymentCreate />
             },
             {
-                path: "/customers/list",
+                path: "customers/list",
                 element: <CustomersList />
             },
             {
-                path: "/customers/view",
+                path: "customers/view",
                 element: <CustomersView />
             },
             {
-                path: "/customers/create",
+                path: "customers/create",
                 element: <CustomersCreate />
             },
             {
-                path: "/leads/list",
+                path: "leads/list",
                 element: <LeadsList />
             },
             {
-                path: "/leads/view",
+                path: "leads/view",
                 element: <LeadsView />
             },
             {
-                path: "/leads/create",
+                path: "leads/create",
                 element: <LeadsCreate />
             },
             {
-                path: "/projects/list",
+                path: "projects/list",
                 element: <ProjectsList />
             },
             {
-                path: "/projects/view",
+                path: "projects/view",
                 element: <ProjectsView />
             },
             {
-                path: "/projects/create",
+                path: "projects/create",
                 element: <ProjectsCreate />
             },
             {
-                path: "/widgets/lists",
+                path: "widgets/lists",
                 element: <WidgetsLists />
             },
             {
-                path: "/widgets/tables",
+                path: "widgets/tables",
                 element: <WidgetsTables />
             },
             {
-                path: "/widgets/charts",
+                path: "widgets/charts",
                 element: <WidgetsCharts/>
             },
             {
-                path: "/widgets/statistics",
+                path: "widgets/statistics",
                 element: <WidgetsStatistics/>
             },
             {
-                path: "/widgets/miscellaneous",
+                path: "widgets/miscellaneous",
                 element: <WidgetsMiscellaneous/>
             },
             {
-                path: "/help/knowledgebase",
+                path: "help/knowledgebase",
                 element: <HelpKnowledgebase />
             },
 
@@ -198,27 +198,27 @@ export const router = createBrowserRouter([
         element: <LayoutApplications />,
         children: [
             {
-                path: "/applications/chat",
+                path: "applications/chat",
                 element: <AppsChat />
             },
             {
-                path: "/applications/email",
+                path: "applications/email",
                 element: <AppsEmail />
             },
             {
-                path: "/applications/tasks",
+                path: "applications/tasks",
                 element: <AppsTasks />
             },
             {
-                path: "/applications/notes",
+                path: "applications/notes",
                 element: <AppsNotes />
             },
             {
-                path: "/applications/calender",
+                path: "applications/calender",
                 element: <AppsCalender />
             },
             {
-                path: "/applications/storage",
+                path: "applications/storage",
                 element: <AppsStorage />
             },
         ]
@@ -228,55 +228,55 @@ export const router = createBrowserRouter([
         element: <LayoutSetting />,
         children: [
             {
-                path: "/settings/ganeral",
+                path: "settings/ganeral",
                 element: <SettingsGaneral />
             },
             {
-                path: "/settings/seo",
+                path: "settings/seo",
                 element: <SettingsSeo />
             },
             {
-                path: "/settings/tags",
+                path: "settings/tags",
                 element: <SettingsTags />
             },
             {
-                path: "/settings/email",
+                path: "settings/email",
                 element: <SettingsEmail />
             },
             {
-                path: "/settings/tasks",
+                path: "settings/tasks",
                 element: <SettingsTasks />
             },
             {
-                path: "/settings/leads",
+                path: "settings/leads",
                 element: <SettingsLeads />
             },
             {
-                path: "/settings/Support",
+                path: "settings/Support",
                 element: <SettingsSupport />
             },
             {
-                path: "/settings/finance",
+                path: "settings/finance",
                 element: <SettingsFinance />
             },
             {
-                path: "/settings/gateways",
+                path: "settings/gateways",
                 element: <SettingsGateways />
             },
             {
-                path: "/settings/customers",
+                path: "settings/customers",
                 element: <SettingsCustomers />
             },
             {
-                path: "/settings/localization",
+                path: "settings/localization",
                 element: <SettingsLocalization />
             },
             {
-                path: "/settings/recaptcha",
+                path: "settings/recaptcha",
                 element: <SettingsRecaptcha />
             },
             {
-                path: "/settings/miscellaneous",
+                path: "settings/miscellaneous",
                 element: <SettingsMiscellaneous />
             },
         ]
@@ -286,75 +286,75 @@ export const router = createBrowserRouter([
         element: <LayoutAuth />,
         children: [
             {
-                path: "/authentication/login/cover",
+                path: "authentication/login/cover",
                 element: <LoginCover />
             },
             {
-                path: "/authentication/login/minimal",
+                path: "authentication/login/minimal",
                 element: <LoginMinimal />
             },
             {
-                path: "/authentication/login/creative",
+                path: "authentication/login/creative",
                 element: <LoginCreative />
             },
             {
-                path: "/authentication/register/cover",
+                path: "authentication/register/cover",
                 element: <RegisterCover />
             },
             {
-                path: "/authentication/register/minimal",
+                path: "authentication/register/minimal",
                 element: <RegisterMinimal />
             },
             {
-                path: "/authentication/register/creative",
+                path: "authentication/register/creative",
                 element: <RegisterCreative />
             },
             {
-                path: "/authentication/reset/cover",
+                path: "authentication/reset/cover",
                 element: <ResetCover />
             },
             {
-                path: "/authentication/reset/minimal",
+                path: "authentication/reset/minimal",
                 element: <ResetMinimal />
             },
             {
-                path: "/authentication/reset/creative",
+                path: "authentication/reset/creative",
                 element: <ResetCreative />
             },
             {
-                path: "/authentication/404/cover",
+                path: "authentication/404/cover",
                 element: <ErrorCover />
             },
             {
-                path: "/authentication/404/minimal",
+                path: "authentication/404/minimal",
                 element: <ErrorMinimal />
             },
             {
-                path: "/authentication/404/creative",
+                path: "authentication/404/creative",
                 element: <ErrorCreative />
             },
             {
-                path: "/authentication/verify/cover",
+                path: "authentication/verify/cover",
                 element: <OtpCover />
             },
             {
-                path: "/authentication/verify/minimal",
+                path: "authentication/verify/minimal",
                 element: <OtpMinimal />
             },
             {
-                path: "/authentication/verify/creative",
+                path: "authentication/verify/creative",
                 element: <OtpCreative />
             },
             {
-                path: "/authentication/maintenance/cover",
+                path: "authentication/maintenance/cover",
                 element: <MaintenanceCover />
             },
             {
-                path: "/authentication/maintenance/minimal",
+                path: "authentication/maintenance/minimal",
                 element: <MaintenanceMinimal />
             },
             {
-                path: "/authentication/maintenance/creative",
+                path: "authentication/maintenance/creative",
                 element: <MaintenanceCreative />
             },
         ]
