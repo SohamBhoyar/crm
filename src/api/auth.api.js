@@ -1,13 +1,5 @@
 import api from "./axios";
 
 export const login = (data) => {
-  return api.post(
-    "/auth/login",
-    data,
-    {
-      headers: {
-        "X-Tenant": "tecnovate"
-      }
-    }
-  );
+  return api.post("/auth/login", data);
 };
