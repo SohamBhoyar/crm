@@ -68,6 +68,7 @@ import WidgetsTables from "../pages/widgets-tables";
 import WidgetsCharts from "../pages/widgets-charts";
 import WidgetsStatistics from "../pages/widgets-statistics";
 import WidgetsMiscellaneous from "../pages/widgets-miscellaneous";
+import portal from "../pages/portal";
 
 export const router = createBrowserRouter([
     { path: "/",
@@ -78,7 +79,10 @@ export const router = createBrowserRouter([
         path: "/",
         element: <RootLayout />,
         children: [
-            {
+             {
+                path: "portal",
+                element: < portal/>
+            },{
                 path: "home",
                 element: <Home />
             },
