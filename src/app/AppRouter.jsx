@@ -72,8 +72,8 @@ const AppRouter = () => {
             </ProtectedRoute>
           }
         >
-          {/* Default */}
-          <Route index element={<Navigate to="/leads" replace />} />
+          {/* Default
+          <Route index element={<Navigate to="/leads" replace />} /> */}
 
           {/* Leads */}
           <Route path="/leads" element={<LeadsList />} />
