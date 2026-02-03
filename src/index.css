@@ -1,0 +1,16 @@
+/* ===== EMERGENCY RESET ===== */
+* {
+  all: unset;
+}
+
+body {
+  all: unset;
+  display: block;
+  font-size: 16px;
+}
+
+#root {
+  all: unset;
+  display: block;
+  min-height: 100vh;
+}
