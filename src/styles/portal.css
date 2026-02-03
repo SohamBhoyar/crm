@@ -1,0 +1,10 @@
+/* Portal CSS reset to neutralize admin template */
+
+body {
+  font-size: 16px !important;
+  line-height: 1.6;
+}
+
+button {
+  font-size: 16px;
+}
