@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <h1 style={{ color: "red", textAlign: "center" }}>
-    REACT IS WORKING
-  </h1>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

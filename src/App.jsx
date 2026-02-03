@@ -13,9 +13,9 @@ import { AuthProvider } from "@/auth/authStore";
 
 function App() {
   return (
-    <AuthProvider>
-      <AppRouter />
-    </AuthProvider>
+    <h1 style={{ color: "green", textAlign: "center" }}>
+      APP RENDERING
+    </h1>
   );
 }
 
