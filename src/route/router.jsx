@@ -14,14 +14,14 @@ import AppsTasks from "../pages/apps-tasks";
 import AppsNotes from "../pages/apps-notes";
 import AppsCalender from "../pages/apps-calender";
 import AppsStorage from "../pages/apps-storage";
-import Proposalist from "../pages/proposal-list";
+// import Proposalist from "../pages/proposal-list";
 import CustomersList from "../pages/customers-list";
-import ProposalView from "../pages/proposal-view";
-import ProposalEdit from "../pages/proposal-edit";
+// import ProposalView from "../pages/proposal-view";
+// import ProposalEdit from "../pages/proposal-edit";
 import LeadsList from "../pages/leadsList";
 import CustomersView from "../pages/customers-view";
 import CustomersCreate from "../pages/customers-create";
-import ProposalCreate from "../pages/proposal-create";
+// import ProposalCreate from "../pages/proposal-create";
 import LeadsView from "../pages/leads-view";
 import LeadsCreate from "../pages/leads-create";
 import PaymentList from "../pages/payment-list";
@@ -103,22 +103,22 @@ export const router = createBrowserRouter([
                 path: "reports/timesheets",
                 element: <ReportsTimesheets />
             },
-            {
-                path: "proposal/list",
-                element: <Proposalist />
-            },
-            {
-                path: "proposal/view",
-                element: <ProposalView />
-            },
-            {
-                path: "proposal/edit",
-                element: <ProposalEdit />
-            },
-            {
-                path: "proposal/create",
-                element: <ProposalCreate />
-            },
+            // {
+            //     path: "proposal/list",
+            //     element: <Proposalist />
+            // },
+            // {
+            //     path: "proposal/view",
+            //     element: <ProposalView />
+            // },
+            // {
+            //     path: "proposal/edit",
+            //     element: <ProposalEdit />
+            // },
+            // {
+            //     path: "proposal/create",
+            //     element: <ProposalCreate />
+            // },
             {
                 path: "payment/list",
                 element: <PaymentList />

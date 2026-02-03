@@ -528,6 +528,8 @@
 
 // src/utils/fackData/menuList.js
 
+// src/utils/fackData/menuList.js
+
 import {
   IconUserPlus,
   IconUsers,
@@ -539,14 +541,14 @@ import {
 
 /**
  * Sidebar navigation menu for Tecnovate CRM
- * 
- * NOTE:
- * - This is UI-only configuration
- * - No role or permission logic here
- * - Visibility will be controlled later via backend permissions
+ *
+ * IMPORTANT:
+ * - Must be a NAMED export (template depends on it)
+ * - UI-only config
+ * - Permissions will be applied later
  */
 
-const menuList = [
+export const menuList = [
   {
     title: "Leads",
     icon: IconUserPlus,
@@ -616,4 +618,3 @@ const menuList = [
   },
 ];
 
-export default menuList;
