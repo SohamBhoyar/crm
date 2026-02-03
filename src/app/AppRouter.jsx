@@ -96,7 +96,7 @@ const AppRouter = () => {
           />
 
           {/* Customers */}
-          <Route path="/customers" element={<CustomersList />} />
+          {/* <Route path="/customers" element={<CustomersList />} />
 
           <Route
             path="/customers/create"
@@ -108,10 +108,10 @@ const AppRouter = () => {
                 <CustomerCreate />
               </PermissionGate>
             }
-          />
+          /> */}
 
           {/* Projects */}
-          <Route path="/projects" element={<ProjectsList />} />
+          {/* <Route path="/projects" element={<ProjectsList />} />
 
           <Route
             path="/projects/create"
@@ -123,10 +123,10 @@ const AppRouter = () => {
                 <ProjectCreate />
               </PermissionGate>
             }
-          />
+          /> */}
 
           {/* Tasks */}
-          <Route path="/tasks" element={<TasksList />} />
+          {/* <Route path="/tasks" element={<TasksList />} />
 
           <Route
             path="/tasks/create"
@@ -135,7 +135,7 @@ const AppRouter = () => {
                 <TaskCreate />
               </PermissionGate>
             }
-          />
+          /> */}
         </Route>
 
         {/* ================= FALLBACK ================= */}
