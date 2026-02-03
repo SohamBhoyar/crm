@@ -1,13 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import * as bootstrap from 'bootstrap'
-// import './assets/scss/theme.scss'
-import "./styles/index.scss";
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <h1 style={{ color: "red", textAlign: "center" }}>
+    REACT IS WORKING
+  </h1>
+);
