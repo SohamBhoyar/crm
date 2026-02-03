@@ -1,5 +1,3 @@
-// src/portal/pages/Purchase.jsx
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { purchaseCompany } from "@/api/portal.api";
@@ -54,7 +52,6 @@ const Purchase = () => {
     setError(null);
 
     try {
-      // 🔥 REAL BACKEND CALL
       const response = await purchaseCompany({
         company_name: form.company_name,
         company_code: form.company_code,
@@ -63,13 +60,18 @@ const Purchase = () => {
         admin_password: form.admin_password,
       });
 
-      // Save tenant code for future API calls
+      // Save tenant code for login flow
       localStorage.setItem("tenant", response.tenant_code);
 
-      // Redirect to login page
+      // Redirect to login
       navigate("/login");
     } catch (err) {
-      setError(err?.message || "Failed to create company");
+      const msg =
+        err?.response?.data?.message ||
+        err?.response?.data?.error ||
+        "Failed to create company";
+
+      setError(msg);
     } finally {
       setLoading(false);
     }
@@ -83,7 +85,7 @@ const Purchase = () => {
         Payment is bypassed for demo. Your CRM workspace will be created instantly.
       </p>
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p style={{ color: "red", marginBottom: "16px" }}>{error}</p>}
 
       <form onSubmit={handleSubmit}>
         {/* Company Name */}
@@ -105,7 +107,7 @@ const Purchase = () => {
             name="company_code"
             value={form.company_code}
             onChange={handleChange}
-            placeholder="example: acme"
+            placeholder="example: tecnovate"
             required
             style={{ width: "100%" }}
           />

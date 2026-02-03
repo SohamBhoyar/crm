@@ -1,18 +1,21 @@
-// src/api/portal.api.js
-
-import http from "@/api/http";
+import axios from "axios";
 
 /**
- * Portal Purchase API
- *
- * PURPOSE:
- * - Create new company (tenant)
- * - Create admin user
- * - Payment bypassed (MVP)
- *
- * BACKEND:
- * POST /api/v1/portal/purchase
+ * Portal API (PUBLIC)
+ * - No auth
+ * - No X-Tenant
+ * - Direct backend call
  */
-export const purchaseCompany = (payload) => {
-  return http.post("/api/v1/portal/purchase", payload);
+
+const portalApi = axios.create({
+  baseURL: "https://crm.tecnovate.in/CRM/backend/public",
+  withCredentials: true,
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+export const purchaseCompany = async (payload) => {
+  const res = await portalApi.post("/api/v1/portal/purchase", payload);
+  return res.data;
 };
