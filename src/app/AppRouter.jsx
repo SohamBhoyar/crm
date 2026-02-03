@@ -61,9 +61,8 @@ const AppRouter = () => {
         </Route>
 
         {/* ================= AUTH ROUTES ================= */}
-        <Route element={<AuthLayout />}>
-          <Route path="/login" element={<LoginPage />} />
-        </Route>
+        <Route path="/login" element={<LoginPage />} />
+
 
         {/* ================= PROTECTED APP ================= */}
         <Route
