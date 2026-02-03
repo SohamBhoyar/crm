@@ -7,6 +7,8 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [hasSession, setHasSession] = useState(false);
+
   const [permissions, setPermissions] = useState([]);
   const [initialized, setInitialized] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -16,15 +18,16 @@ export const AuthProvider = ({ children }) => {
    */
   const bootstrap = async () => {
     try {
-      const data = await getMe();
-      setUser(data.user);
-      setPermissions(data.permissions || []);
-    } catch {
-      setUser(null);
-      setPermissions([]);
-    } finally {
-      setInitialized(true);
-    }
+  const data = await getMe();
+  setUser(data.user);
+  setPermissions(data.permissions || []);
+  setHasSession(true); // ✅ session exists
+} catch {
+  setUser(null);
+  setPermissions([]);
+  setHasSession(false); // ❌ no session yet
+}
+
   };
 
   /**
@@ -68,9 +71,12 @@ export const AuthProvider = ({ children }) => {
 
   // 🔥 Listen for session expiry from Axios
   useEffect(() => {
-    const handleSessionExpired = () => {
-      logout(true);
-    };
+   const handleSessionExpired = () => {
+  // Only logout if a session was already established
+  if (hasSession) {
+    logout(true);
+  }
+};
 
     window.addEventListener("auth:expired", handleSessionExpired);
 
