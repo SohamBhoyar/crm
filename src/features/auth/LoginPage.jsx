@@ -1,19 +1,27 @@
 // src/features/auth/LoginPage.jsx
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import { useAuth } from "@/auth/authStore";
 
 /**
  * LoginPage
  *
  * Custom login page for Tecnovate CRM
- * (No Duralux dependency)
+ * - Login is allowed ONLY if tenant exists
+ * - Prevents tenant-less login attempts
  */
 
 const LoginPage = () => {
   const navigate = useNavigate();
   const { login, loading } = useAuth();
+
+  // 🔒 TENANT GUARD (CRITICAL)
+  const tenant = localStorage.getItem("tenant");
+  if (!tenant) {
+    // User must come via portal purchase
+    return <Navigate to="/" replace />;
+  }
 
   const [form, setForm] = useState({
     email: "",
