@@ -2,9 +2,6 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import { useAuth } from "@/auth/authStore";
-import PermissionGate from "@/permissions/PermissionGate";
-
 // Layouts
 import AuthLayout from "@/layouts/AuthLayout";
 import DashboardLayout from "@/layouts/DashboardLayout";
@@ -12,6 +9,8 @@ import PublicLayout from "@/layouts/PublicLayout";
 
 // Auth pages
 import LoginPage from "@/features/auth/LoginPage";
+
+
 
 // Portal pages
 import Home from "@/portal/pages/Home";
@@ -31,6 +30,9 @@ import LeadEdit from "@/features/leads/pages/LeadEdit";
 
 // import TasksList from "@/features/tasks/pages/TasksList";
 // import TaskCreate from "@/features/tasks/pages/TaskCreate";
+
+import { useAuth } from "@/auth/authStore";
+import PermissionGate from "@/permissions/PermissionGate";
 
 /**
  * Auth-only route guard
