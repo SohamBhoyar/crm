@@ -1,4 +1,5 @@
 // src/layouts/DashboardLayout.jsx
+import "@/styles/index.scss";
 
 import { Outlet } from "react-router-dom";
 import { useAuth } from "@/auth/authStore";
